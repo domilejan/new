@@ -1,2 +1,2 @@
-# Front client angular blueprint
+# Frontend client angular blueprint
 Blueprint for walhall frontend clients 
