@@ -11,7 +11,7 @@ describe('ClientComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [MidgardStoreModule.forRoot()],
-      declarations: [ ContactsComponent ],
+      declarations: [ ClientComponent ],
       schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
