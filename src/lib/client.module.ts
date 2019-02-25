@@ -11,4 +11,4 @@ import { ClientRoutingModule } from './client-routing.module';
   declarations: [ClientComponent],
   exports: [ClientComponent]
 })
-export class ContactsModule { }
+export class ClientModule { }
