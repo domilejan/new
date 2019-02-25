@@ -85,7 +85,7 @@ const updateClientEpic = action$ => {
       delete payload['id']; // remove id from payload because we already send it in the url
       return httpService.makeRequest('patch', `${environment.API_URL}/client/${action.data.id}/`, payload, true).pipe(
         // If successful, dispatch success action with result
-        map((res: Action) => updateClientCommit(res.data, action.nested)),
+        map((res: Action) => updateClientCommit(res.data)),
         // If request fails, dispatch failed action
         catchError((error) => of(updateClientFail(error)))
       );
@@ -103,7 +103,7 @@ const deleteClientEpic = action$ => {
     switchMap((action: Action) => {
       return httpService.makeRequest('delete', `${environment.API_URL}/client/${action.data.id}/`, {},  true).pipe(
         // If successful, dispatch success action with result
-        map(res => deleteClientCommit(action.data, action.nested)),
+        map(res => deleteClientCommit(action.data)),
         // If request fails, dispatch failed action
         catchError((error) => of(deleteClientFail(error)))
       );

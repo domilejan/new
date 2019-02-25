@@ -115,7 +115,7 @@ export function updateClientFail(error) {
 export function deleteClient(data: Client) {
   return {
     type: DELETE_CLIENT,
-    id
+    data
   };
 }
 
