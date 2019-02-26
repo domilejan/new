@@ -4,9 +4,10 @@ import {
   CREATE_CLIENT_COMMIT, DELETE_CLIENT_COMMIT, LOAD_ALL_CLIENTS_COMMIT, LOAD_ONE_CLIENT_COMMIT,
   UPDATE_CLIENT_COMMIT
 } from './client.actions';
+import {Client} from './client.model';
 
 export interface ClientState {
-  data: ClientUser[];
+  data: Client[];
   loaded: false;
   created: false;
   updated: false;
