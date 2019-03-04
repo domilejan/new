@@ -1,5 +1,5 @@
 // here you can define the client reducer
-import { addAll, deleteOne, upsertOne } from '@libs/midgard-angular/src/lib/modules/store/reducer.utils';
+import { addAll, deleteOne, upsertOne } from '../../../../../midgard/modules/store/reducer.utils';
 import {
   CREATE_CLIENT_COMMIT, DELETE_CLIENT_COMMIT, LOAD_ALL_CLIENTS_COMMIT, LOAD_ONE_CLIENT_COMMIT,
   UPDATE_CLIENT_COMMIT

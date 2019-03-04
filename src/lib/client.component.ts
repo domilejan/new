@@ -1,6 +1,6 @@
 // entry component for the client
 import {Component, OnInit} from '@angular/core';
-import { Store } from '@libs/midgard-angular/src/lib/modules/store/store';
+import { Store } from '../../../../midgard/modules/store/store';
 @Component({
   selector: 'lib-contacts',
   templateUrl: './client.component.html',

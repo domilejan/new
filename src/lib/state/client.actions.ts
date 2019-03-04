@@ -128,7 +128,7 @@ export function deleteClientCommit(data: Client) {
 
 export function deleteClientFail(error) {
   return {
-    type: DELETE_CLIENTS_FAIL,
+    type: DELETE_CLIENT_FAIL,
     error
   };
 }

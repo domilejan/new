@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { ClientComponent } from './client.component';
-import { MidgardSharedTranslationModule } from '@libs/midgard-angular/src/lib/modules/translation/translation.shared.module';
+import { MidgardSharedTranslationModule } from '../../../../midgard/modules/translation/translation.shared.module';
 import { ClientRoutingModule } from './client-routing.module';
 
 @NgModule({

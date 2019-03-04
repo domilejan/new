@@ -1,6 +1,5 @@
 // client epics goes here
-
-import { HttpService } from '@libs/midgard-angular/src/lib/modules/http/http.service';
+import { HttpService } from '../../../../../midgard/modules/http/http.service';
 import { ofType } from 'redux-observable';
 import { switchMap, catchError, map } from 'rxjs/operators';
 import { of } from 'rxjs';
@@ -8,10 +7,10 @@ import {
   createClientCommit, createClientFail, deleteClientCommit, deleteClientFail,
   loadOneClientFail, loadClientsCommit,
   updateClientCommit, updateClientFail, loadClientsFail
-} from '@libs/clients/src/lib/state/clients.actions';
-import { environment } from '@env/environment';
-import { reduxObservable } from '@libs/midgard-angular/src/lib/modules/store';
-import { Action } from '@libs/midgard-angular/src/lib/state/action.type';
+} from './client.actions';
+import { environment } from '../../../../../environments/environment';
+import { reduxObservable } from '../../../../../midgard/modules/store/index';
+import { Action } from '../../../../../midgard/state/action.type';
 import {
   CREATE_CLIENT, DELETE_CLIENT, LOAD_ALL_CLIENTS, LOAD_ONE_CLIENT, loadOneClientCommit,
   UPDATE_CLIENT

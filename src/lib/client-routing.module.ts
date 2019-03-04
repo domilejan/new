@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { AuthGuard } from '@libs/midgard-angular/src/lib/modules/oauth/auth.guard';
+import { AuthGuard } from '../../../../midgard/modules/oauth/auth.guard';
 import { ClientComponent} from './client.component';
 
 const clientRoutes: Routes = [
