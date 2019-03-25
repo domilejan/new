@@ -53,10 +53,6 @@ To **run end-to-end tests** using [Protractor](https://www.protractortest.org/#/
 
 `ng e2e {name-of-module}`
 
-## API documentation (Compodoc)
-
-[Click here to go to the full API documentation (generated using Compodoc).](/{path-to-this-client}/documentation)
-
 ## License
 
 Copyright &#169;2019 Humanitec GmbH.
