@@ -6,8 +6,5 @@
     "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
   },
   "dependencies": {
-    "freyja-ui": "0.3.8",
-    "redux-observable": "^1.0.0",
-    "rxjs": "6.3.2"
   }
 }
