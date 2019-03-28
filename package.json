@@ -7,7 +7,6 @@
   },
   "dependencies": {
     "freyja-ui": "0.3.8",
-    "midgard-core": "0.0.16",
     "redux-observable": "^1.0.0",
     "rxjs": "6.3.2"
   }
