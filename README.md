@@ -6,7 +6,7 @@ title = "Client blueprint (Angular)"
 
 ## Summary
 
-This is a blueprint client written in [Angular](). 
+This is a blueprint client written in [Angular](https://angularjs.org/). 
 
 ## Dependencies
 
