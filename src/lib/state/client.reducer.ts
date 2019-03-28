@@ -21,7 +21,7 @@ const initialState: ClientState = {
   deleted: false
 };
 
-export function clientsReducer(state = initialState, action) {
+export function clientReducer(state = initialState, action) {
   switch (action.type) {
     case LOAD_ALL_CLIENTS_COMMIT:
       return addAll(state, action);
