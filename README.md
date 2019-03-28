@@ -1,12 +1,12 @@
-# [Module] client (Angular)
++++
+title = "Client blueprint (Angular)"
++++
 
-## Overview
+# Client blueprint (Angular)
 
-_Please address the following points:_
+## Summary
 
--  _Which logic module uses this client?_
--  _What kinds of views does this client provide for your app?_
--  _Please provide screenshots._
+This is a blueprint client written in [Angular](). 
 
 ## Dependencies
 
@@ -15,18 +15,14 @@ _Please address the following points:_
 -  _List of npm packages used_
 -  _List of npm packages used_
 
-### Backend endpoints used
+## Develop this client
 
--  _List of service endpoints used_
--  _List of service endpoints used_
+-  To **build** the project: `ng build {name-of-module}`  
+  -  The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+-  To **run tests** using [Karma](https://karma-runner.github.io/0.13/index.html): `ng test {name-of-module}`
+-  To **run end-to-end tests** using [Protractor](https://www.protractortest.org/#/): `ng e2e {name-of-module}`
 
 ## File structure
-
-_Format:_
-
--  _`/dir`: Description of what's in this directory._
-
-_Standard directories for Angular clients:_
 
 -  `/components`: Components that do not have roots assigned to them.
 -  `/helpers`: The client's helper classes.
@@ -37,21 +33,18 @@ _Standard directories for Angular clients:_
 -  `routing.module.ts`: Where the client's routes are defined.
 -  `ngModule`: Where components, services, pipes, etc. are defined.
 
-## Local development
+## Services
 
-To **build** the project: 
+This client connects to the following services:
 
-`ng build {name-of-module}` 
+-  [Link to documentation for service that the client uses](https://example.com)
+-  [Link to documentation for service that the client uses](https://example.com)
 
-The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Document the ways in which this client connects to the service. Methods used, data models used, endpoints used, etc.
 
-To **run tests** using [Karma](https://karma-runner.github.io/0.13/index.html):
+## API documentation (Compodoc)
 
-`ng test {name-of-module}`
-
-To **run end-to-end tests** using [Protractor](https://www.protractortest.org/#/):
-
-`ng e2e {name-of-module}`
+Run `npm run compodoc` to generate [Compodoc](https://compodoc.github.io/compodoc/) documentation to the `/documentation` directory.
 
 ## License
 
