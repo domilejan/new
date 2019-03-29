@@ -1,7 +1,7 @@
 // define the client actions here
 
 // Load All
-import {Client} from './client.model';
+import {Client} from './blueprint-client.model';
 
 export const LOAD_ALL_CLIENTS = 'LOAD_ALL_CLIENTS';
 export const LOAD_ALL_CLIENTS_COMMIT = 'LOAD_ALL_CLIENTS_COMMIT';

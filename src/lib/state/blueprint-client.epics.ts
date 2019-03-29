@@ -7,14 +7,14 @@ import {
   createClientCommit, createClientFail, deleteClientCommit, deleteClientFail,
   loadOneClientFail, loadClientsCommit,
   updateClientCommit, updateClientFail, loadClientsFail
-} from './client.actions';
+} from './blueprint-client.actions';
 import { environment } from '../../../../../environments/environment';
 import { reduxObservable } from '../../../../../midgard/modules/store/index';
 import { Action } from '../../../../../midgard/state/action.type';
 import {
   CREATE_CLIENT, DELETE_CLIENT, LOAD_ALL_CLIENTS, LOAD_ONE_CLIENT, loadOneClientCommit,
   UPDATE_CLIENT
-} from './client.actions';
+} from './blueprint-client.actions';
 import { Injectable } from '@angular/core';
 
 @Injectable()

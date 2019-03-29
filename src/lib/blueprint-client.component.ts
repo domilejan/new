@@ -3,8 +3,8 @@ import {Component, OnInit} from '@angular/core';
 import { Store } from '../../../../midgard/modules/store/store';
 @Component({
   selector: 'lib-contacts',
-  templateUrl: './client.component.html',
-  styleUrls: ['./client.component.scss']
+  templateUrl: './blueprint-client.component.html',
+  styleUrls: ['./blueprint-client.component.scss']
 })
 export class ClientComponent implements OnInit {
   constructor(private store: Store<any>) {}

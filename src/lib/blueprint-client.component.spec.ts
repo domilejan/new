@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 import {MidgardStoreModule} from '../../../../midgard/modules/store/store.module';
-import {ClientComponent} from './client.component';
+import {ClientComponent} from './blueprint-client.component';
 
 describe('ClientComponent', () => {
   let component: ClientComponent;
