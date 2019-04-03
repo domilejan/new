@@ -2,7 +2,7 @@
 import {Component, OnInit} from '@angular/core';
 import { Store } from '../../../../midgard/modules/store/store';
 @Component({
-  selector: 'lib-contacts',
+  selector: 'lib-client',
   templateUrl: './blueprint-client.component.html',
   styleUrls: ['./blueprint-client.component.scss']
 })

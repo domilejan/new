@@ -1,8 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NO_ERRORS_SCHEMA } from '@angular/core';
-import {MidgardStoreModule} from '../../../../midgard/modules/store/store.module';
 import {ClientComponent} from './blueprint-client.component';
+import { StoreStub } from '../../../../midgard/testing-utilities/stubs';
+import { Store } from '../../../../midgard/modules/store/store';
 
 describe('ClientComponent', () => {
   let component: ClientComponent;
@@ -10,7 +11,10 @@ describe('ClientComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [MidgardStoreModule.forRoot()],
+      imports: [],
+      providers: [
+        { provide: Store, useClass: StoreStub },
+      ],
       declarations: [ ClientComponent ],
       schemas: [NO_ERRORS_SCHEMA]
     })
