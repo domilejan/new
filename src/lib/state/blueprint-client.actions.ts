@@ -34,7 +34,7 @@ export function loadClients() {
   };
 }
 
-export function loadClientsCommit(data: Client[]) {
+export function loadClientsCommit(data: BlueprintClient[]) {
   return {
     type: LOAD_ALL_CLIENTS_COMMIT,
     data
@@ -69,14 +69,14 @@ export function loadOneClientFail(error) {
   };
 }
 
-export function createClient(data: Client) {
+export function createClient(data: BlueprintClient) {
   return {
     type: CREATE_CLIENT,
     data,
   };
 }
 
-export function createClientCommit(data: Client, index?: number) {
+export function createClientCommit(data: BlueprintClient, index?: number) {
   return {
     type: CREATE_CLIENT_COMMIT,
     data,
@@ -98,7 +98,7 @@ export function updateClient(data) {
   };
 }
 
-export function updateClientCommit(data: Client) {
+export function updateClientCommit(data: BlueprintClient) {
   return {
     type: UPDATE_CLIENT_COMMIT,
     data
@@ -112,14 +112,14 @@ export function updateClientFail(error) {
   };
 }
 
-export function deleteClient(data: Client) {
+export function deleteClient(data: BlueprintClient) {
   return {
     type: DELETE_CLIENT,
     data
   };
 }
 
-export function deleteClientCommit(data: Client) {
+export function deleteClientCommit(data: BlueprintClient) {
   return {
     type: DELETE_CLIENT_COMMIT,
     data,
