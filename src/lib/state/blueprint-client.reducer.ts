@@ -4,16 +4,16 @@ import {
   CREATE_CLIENT_COMMIT, DELETE_CLIENT_COMMIT, LOAD_ALL_CLIENTS_COMMIT, LOAD_ONE_CLIENT_COMMIT,
   UPDATE_CLIENT_COMMIT
 } from './blueprint-client.actions';
-import {Client} from './blueprint-client.model';
+import { BlueprintClient } from './blueprint-client.model';
 
-export interface ClientState {
-  data: Client[];
+export interface BlueprintClientState {
+  data: BlueprintClient[];
   loaded: false;
   created: false;
   updated: false;
   deleted: false;
 }
-const initialState: ClientState = {
+const initialState: BlueprintClientState = {
   data: [],
   loaded: false,
   created: false,
@@ -21,7 +21,7 @@ const initialState: ClientState = {
   deleted: false
 };
 
-export function clientReducer(state = initialState, action) {
+export function blueprintClientReducer(state = initialState, action) {
   switch (action.type) {
     case LOAD_ALL_CLIENTS_COMMIT:
       return addAll(state, action);

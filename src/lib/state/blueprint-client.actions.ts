@@ -1,7 +1,7 @@
 // define the client actions here
 
 // Load All
-import {Client} from './blueprint-client.model';
+import { BlueprintClient } from './blueprint-client.model';
 
 export const LOAD_ALL_CLIENTS = 'LOAD_ALL_CLIENTS';
 export const LOAD_ALL_CLIENTS_COMMIT = 'LOAD_ALL_CLIENTS_COMMIT';
@@ -55,7 +55,7 @@ export function loadOneClient(id: string) {
   };
 }
 
-export function loadOneClientCommit(data: Client) {
+export function loadOneClientCommit(data: BlueprintClient) {
   return {
     type: LOAD_ONE_CLIENT_COMMIT,
     data

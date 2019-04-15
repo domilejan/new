@@ -1,6 +1,7 @@
 // here you can define memoized state selectors for the client
 import { reselect } from '@midgard/modules/store/index';
-import { ClientState } from './blueprint-client.reducer';
+import { BlueprintClientState } from './blueprint-client.reducer';
+import { BlueprintClient } from './blueprint-client.model';
 
 const getClients = state => state.clientsReducer;
 
@@ -10,7 +11,7 @@ const getClients = state => state.clientsReducer;
  */
 export const getClientState = reselect.createSelector(
   getClients,
-  (clientState: ClientState) => {
+  (clientState: BlueprintClientState) => {
     if (clientState) {
       return clientState;
     }
