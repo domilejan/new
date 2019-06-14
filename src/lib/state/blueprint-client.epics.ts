@@ -1,4 +1,6 @@
 // client epics goes here
+// PLEASE REPLACE THE PLACEHOLDER STRINGS "CLIENT/BlueprintClient/client" WITH YOUR OWN CLIENT NAME
+
 import { HttpService } from '@midgard/modules/http/http.service';
 import { ofType } from 'redux-observable';
 import { switchMap, catchError, map } from 'rxjs/operators';

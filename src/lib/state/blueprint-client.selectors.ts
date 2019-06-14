@@ -1,4 +1,5 @@
 // here you can define memoized state selectors for the client
+// PLEASE REPLACE THE PLACEHOLDER STRINGS "CLIENT/BlueprintClient/client" WITH YOUR OWN CLIENT NAME
 import { reselect } from '@midgard/modules/store/index';
 import { BlueprintClientState } from './blueprint-client.reducer';
 import { BlueprintClient } from './blueprint-client.model';

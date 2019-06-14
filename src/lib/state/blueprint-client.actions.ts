@@ -1,4 +1,5 @@
 // define the client actions here
+// PLEASE REPLACE THE PLACEHOLDER STRINGS "CLIENT/BlueprintClient/client" WITH YOUR OWN CLIENT NAME
 
 // Load All
 import { BlueprintClient } from './blueprint-client.model';

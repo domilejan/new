@@ -1,4 +1,5 @@
 // here you can define the client reducer
+// PLEASE REPLACE THE PLACEHOLDER STRINGS "CLIENT/BlueprintClient/client" WITH YOUR OWN CLIENT NAME
 import { addAll, deleteOne, upsertOne } from '@midgard/modules/store/reducer.utils';
 import {
   CREATE_CLIENT_COMMIT, DELETE_CLIENT_COMMIT, LOAD_ALL_CLIENTS_COMMIT, LOAD_ONE_CLIENT_COMMIT,
