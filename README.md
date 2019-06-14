@@ -24,12 +24,16 @@ This is a blueprint client written in [Angular](https://angularjs.org/).
 
 ## File structure
 
--  `/components`: Components that do not have roots assigned to them.
--  `/helpers`: The client's helper classes.
--  `/pages`: Components that have roots assigned to them.
--  `/services`: Classes that provide data.
--  `/state`: State-related files and data models.
--  `/styles`: Contains styles specific to the client.
+The client should follow this file structure
+
+-  `/src/lib/components`: Components that do not have roots assigned to them.
+-  `/src/lib/helpers`: The client's helper classes.
+-  `/src/lib/src/pages`: Components that have roots assigned to them.
+-  `/src/lib/src/services`: Classes that provide data.
+-  `/src/lib/src/state`: State-related files and data models.
+-  `/src/lib/styles`: Contains styles specific to the client.
+-  `/src/lib/i18n`: Contains styles specific to the client.
+-  `/src/lib/assets`: Contains styles specific to the client.
 -  `routing.module.ts`: Where the client's routes are defined.
 -  `ngModule`: Where components, services, pipes, etc. are defined.
 
